@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan Via WhatsApp</title>
+    <link rel="stylesheet" href="../css/pesanWa.css" />
+    <link rel="icon" type="image/x-icon" href="/image/logo.jpg" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Pesan Produk Via WhatsApp</h1>
+      </div>
+      <h2>Buat Pesanan</h2>
+      <div class="content">
+        <div class="form">
+          <label for="name">Nama*:</label>
+          <input type="text" name="name" class="name" required />
+          <label for="address">Alamat*:</label>
+          <input type="text" name="address" class="address" required />
+          <label for="produk">Produk*:</label>
+          <select name="produk" class="product" required>
+            <option value="jahe gajah powder">Jahe Gajah Powder</option>
+            <option value="laos powder">Laos Powder</option>
+            <option value="kencur powder">Kencur Powder</option>
+            <option value="jahe emprit powder">Jahe Emprit Powder</option>
+            <option value="serai powder">Serai Powder</option>
+            <option value="kayu manis powder">Kayu Manis Powder</option>
+            <option value="kunyit putih powder">Kunyit Putih Powder</option>
+            <option value="kelor powder">Kelor Powder</option>
+            <option value="Temulawak powder">Temulawak Powder</option>
+            <option value="kunyit powder">Kunyit Powder</option>
+            <option value="daun salam powder">Daun Salam Powder</option>
+            <option value="jahe merah powder">Jahe Merah Powder</option>
+            <option value="daun pepaya powder">Daun Pepaya Powder</option>
+            <option value="sambiloto powder">Sambiloto Powder</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+          <label for="jumlah">Jumlah*:</label>
+          <input type="number" min="0" max="100" class="jumlah" name="jumlah" />
+          <label for="catatan">Catatan:</label>
+          <textarea name="catatan" class="catatan"></textarea>
+          <div class="btn">
+            <a href="index.html" class="btn-1">Batal</a>
+            <a href="#" onclick="sendWa();" class="btn-2">Kirim</a>
+            <!-- <button type="button" onclick="sendWa();">Kirim</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/pesanWa.js"></script>
+  </body>
+</html>
