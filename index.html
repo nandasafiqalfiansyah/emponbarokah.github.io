@@ -657,7 +657,7 @@
           ></iframe>
         </div>
         <div class="contact-main">
-          <div class="contact-form">
+          <form class="contact-form" onsubmit="return kirimPesanWa();">
             <p>Ada Pertanyaan?</p>
             <span>
               <p>
@@ -667,17 +667,17 @@
             <label>
               Nama 
             </label>
-            <input type="text" name="nama" class="nama" />
+            <input type="text" name="nama" class="nama" required/>
             <label>
               Alamat 
             </label>
-            <input type="text" name="alamat" class="alamat" />
+            <input type="text" name="alamat" class="alamat" required/>
             <label>
               Pesan 
             </label>
               <textarea class="pesan"></textarea>
-            <button type="button" onclick="kirimPesanWa();">Kirim</button>
-          </div>
+            <button type="submit">Kirim</button>
+          </form>
           <div class="medsos">
             <p>Temukan Kami Juga di:</p>
             <a href="https://vm.tiktok.com/ZSN7DNYFn/"
