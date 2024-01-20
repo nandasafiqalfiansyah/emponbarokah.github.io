@@ -39,7 +39,7 @@ let prev = document.getElementById("previous");
 let next = document.getElementById("nexts");
 
 let active = 0;
-let lengthItmes = items.length - 1;
+let lengthItmes = items.length - 2;
 
 prev.onclick = function () {
   if (active - 1 < 0) {

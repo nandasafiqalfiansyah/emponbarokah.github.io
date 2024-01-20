@@ -9,11 +9,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  --nav-height: 50px;
-  /* padding-top: var(--nav-height); */
-}
-
 /* header style start */
 header {
   padding-left: 2rem;
@@ -38,7 +33,7 @@ header .logo a {
   cursor: pointer;
 }
 header .logo img {
-  width: 5em;
+  width: 5rem;
 }
 
 header .logo h3 {
@@ -72,16 +67,18 @@ header .navbar #hamburger-menu {
 .hero-container {
   width: 100%;
   margin: auto;
-  padding-top: 1rem;
+  padding-top: 3.2rem;
 }
 
 .hero-container .hero-slider {
-  height: 50em;
+
+  height: 20em;
   margin: auto;
   position: relative;
   overflow: hidden;
 }
 .hero-container .hero-slider .hero-list {
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -92,10 +89,11 @@ header .navbar #hamburger-menu {
 }
 
 .hero-container .hero-slider .hero-list img {
-  width: 1300px;
+  width: 100%;
   max-width: 100vw;
   height: 100%;
   object-fit: cover;
+  margin-top: 1.8rem;
 }
 
 .hero-container .hero-slider .buttons {
@@ -146,7 +144,7 @@ header .navbar #hamburger-menu {
 
 .hero .teks-berjalan {
   background-color: #003334ff;
-  height: 50px;
+  height: 3rem;
   display: flex;
   align-items: center;
 }
@@ -158,43 +156,6 @@ header .navbar #hamburger-menu {
   color: #fff;
   font-weight: bold;
 }
-/* hero image stayle end */
-
-/* home style start */
-/* .home-container {
-  display: flex;
-  width: 90%;
-  margin: 50px auto;
-}
-
-.home-container .home-text h1 {
-  color: #003334ff;
-  font-size: 1.5rem;
-}
-
-.home-container .home-text p {
-  margin: 1.5rem 0;
-  font-size: 1rem;
-  color: #003334ff;
-}
-
-.home-container .home-text .btn a {
-  padding: 0.5rem;
-  font-size: 1rem;
-  background-color: #003334ff;
-  color: #fff;
-  transition: 0.3s ease;
-  border-radius: 5px;
-}
-
-.home-container .home-image {
-  border: 1px solid pink;
-}
-
-.home-container .home-image img {
-  width: 100%;
-} */
-
 /* home style end */
 
 /* about style start */
@@ -207,6 +168,7 @@ header .navbar #hamburger-menu {
 .about .about-title {
   margin: 2rem auto;
   display: inline-block;
+  margin-top: 5rem;
 }
 h1{
   display: inline-block;
@@ -298,7 +260,7 @@ h1{
   width: 90%;
   margin: 1rem auto;
   /* border: 1px solid red; */
-  padding-top: 2rem;
+  padding-top: 7rem;
   padding-bottom: 2rem;
   padding-left: 1%;
 }
@@ -373,12 +335,22 @@ p {
   min-width: 10px;
   overflow: auto;
   z-index: 1;
+  
 }
 
 .product .product-container .product-content .btn .dropDown p {
   font-weight: 600;
   font-size: 1rem;
   color: #fff;
+  padding-top: 0.7rem;
+  
+}
+
+.product .product-container .product-content .btn .dropDown a:hover {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .product .product-container .product-content .btn .dropDown a {
@@ -588,8 +560,8 @@ p {
 .contact-container .contact-title h1 {
   color: #003334ff;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
   margin-bottom: 2rem;
+  margin-top: 5rem;
 }
 
 .contact-container .contact-content {
@@ -692,7 +664,7 @@ p {
 /* banner style start */
 .banner {
   width: 90%;
-  margin: 50px auto;
+  margin: 2rem auto;
   background-color: #003334ff;
   padding: 0.5rem;
   box-sizing: border-box;
@@ -841,6 +813,7 @@ p {
   width: 90%;
   margin: 0 auto;
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 /* footer style end */
 
@@ -881,6 +854,7 @@ p {
 
   .about .about-container-satu .about-text {
     margin-top: 10px;
+    margin-left: -1.5rem;
   }
 
   .hero-container .hero-slider {
@@ -1070,3 +1044,4 @@ p {
   }
 }
 /* mobile view */
+

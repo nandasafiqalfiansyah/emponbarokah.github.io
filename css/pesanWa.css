@@ -8,8 +8,12 @@
   list-style-type: none;
   text-decoration: none;
   scroll-behavior: smooth;
+ 
 }
+body{
+  background-image: url(https://i.pinimg.com/564x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg);
 
+}
 .container {
   width: 90%;
   margin: 50px auto;
@@ -61,6 +65,7 @@ select {
   padding: 1rem;
   border: 0.1rem solid #003334ff;
   outline: none;
+  max-width:100% ;
 }
 
 .container .content .form .btn {
@@ -72,12 +77,13 @@ select {
 }
 
 .container .content .form .btn a {
-  width: 100%;
+  width: 90%;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-right: 3rem;
 }
 
 .container .content .form .btn button{
@@ -86,7 +92,8 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  border: none;
+  font-size: 1rem;
 }
 
 .container .content .form .btn .btn-1 {
@@ -115,6 +122,9 @@ select {
   }
 
   .container .content .form .btn a {
+    height: 25px;
+  }
+  .container .content .form .btn button {
     height: 25px;
   }
 }
