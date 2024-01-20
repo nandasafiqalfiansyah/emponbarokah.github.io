@@ -98,3 +98,27 @@ document.addEventListener("click", function (e) {
     navbar.classList.remove("active");
   }
 });
+
+function kirimPesanWa() {
+  let nomorHp = "+6281264755844";
+
+  let nama = document.querySelector(".nama").value;
+  let alamat = document.querySelector(".alamat").value;
+  let pesan = document.querySelector(".pesan").value;
+
+  let url =
+    "https://wa.me/" +
+    nomorHp +
+    "?text= " +
+    "*Nama :* " +
+    nama +
+    "%0a" +
+    "*Alamat :* " +
+    alamat +
+    "%0a " +
+    "*Pesan :* " +
+    pesan +
+    "%0a%0a";
+
+  window.open(url, "_blank").focus();
+}
