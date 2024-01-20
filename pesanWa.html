@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pesan Via WhatsApp</title>
-    <link rel="stylesheet" href="../css/pesanWa.css" />
+    <link rel="stylesheet" href="./css/pesanWa.css" />
     <link rel="icon" type="image/x-icon" href="/image/logo.jpg" />
   </head>
   <body>
@@ -14,7 +14,7 @@
       </div>
       <h2>Buat Pesanan</h2>
       <div class="content">
-        <div class="form">
+        <form class="form" onsubmit="return sendWa();">
           <label for="name">Nama*:</label>
           <input type="text" name="name" class="name" required />
           <label for="address">Alamat*:</label>
@@ -38,18 +38,21 @@
             <option value="lainnya">Lainnya</option>
           </select>
           <label for="jumlah">Jumlah*:</label>
-          <input type="number" min="0" max="100" class="jumlah" name="jumlah" />
+          <input type="number" min="0" max="100" class="jumlah" name="jumlah" required />
           <label for="catatan">Catatan:</label>
-          <textarea name="catatan" class="catatan"></textarea>
+          <textarea name="catatan" class="catatan" required></textarea>
+
           <div class="btn">
             <a href="index.html" class="btn-1">Batal</a>
-            <a href="#" onclick="sendWa();" class="btn-2">Kirim</a>
-            <!-- <button type="button" onclick="sendWa();">Kirim</button> -->
+            <button type="submit" onsubmit="sendWa();" class="btn-2">Kirim</button>
           </div>
         </div>
+      </form>
       </div>
+
+      
     </div>
 
-    <script src="../js/pesanWa.js"></script>
+    <script src="./js/pesanWa.js"></script>
   </body>
 </html>

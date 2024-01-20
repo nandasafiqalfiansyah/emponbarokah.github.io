@@ -16,6 +16,8 @@ body {
 
 /* header style start */
 header {
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: 100%;
   top: 0;
   left: 0;
@@ -36,7 +38,7 @@ header .logo a {
   cursor: pointer;
 }
 header .logo img {
-  width: 100px;
+  width: 5em;
 }
 
 header .logo h3 {
@@ -47,6 +49,10 @@ header .logo h3 {
 header .navbar a {
   color: #fff;
   margin: 0 10px;
+}
+
+header .navbar a:hover{
+  text-decoration: underline;
 }
 
 header #hamburger-menu {
@@ -64,18 +70,17 @@ header .navbar #hamburger-menu {
 
 /* hero image stayle start */
 .hero-container {
-  width: 90%;
-  margin: 0px auto;
-  padding: 8rem 1% 1.4rem;
+  width: 100%;
+  margin: auto;
+  padding-top: 1rem;
 }
 
 .hero-container .hero-slider {
-  height: 500px;
-  margin: 50px auto;
+  height: 50em;
+  margin: auto;
   position: relative;
   overflow: hidden;
 }
-
 .hero-container .hero-slider .hero-list {
   position: absolute;
   top: 0;
@@ -148,8 +153,8 @@ header .navbar #hamburger-menu {
 
 .hero .teks-berjalan marquee p {
   display: inline-block;
-  margin: 0 10px;
-  font-size: 1.5rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
   color: #fff;
   font-weight: bold;
 }
@@ -196,11 +201,17 @@ header .navbar #hamburger-menu {
 .about {
   width: 90%;
   margin: 0px auto;
-  padding: 8rem 1% 1.4rem;
+  padding: 1.5rem 1% 1.4rem;
 }
 
 .about .about-title {
-  margin: 1rem auto;
+  margin: 2rem auto;
+  display: inline-block;
+}
+h1{
+  display: inline-block;
+  border-bottom: 2px solid #003334ff; 
+  padding-bottom: 0.5rem;
 }
 
 .about .about-title h1 {
@@ -224,6 +235,7 @@ header .navbar #hamburger-menu {
 .about .about-container-satu .about-text p {
   text-align: justify;
   font-size: 1rem;
+  margin-left: 1rem;
 }
 
 .about .about-container-satu .about-text p a {
@@ -269,7 +281,6 @@ header .navbar #hamburger-menu {
 /* product container start */
 .product {
   background-color: #ecececdd;
-  padding: 8rem 1% 1.4rem;
 }
 
 .product .product-container {
@@ -287,6 +298,9 @@ header .navbar #hamburger-menu {
   width: 90%;
   margin: 1rem auto;
   /* border: 1px solid red; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1%;
 }
 
 .product .product-title h1 {
@@ -454,12 +468,14 @@ p {
 .platform-container {
   width: 90%;
   margin: 50px auto;
+
 }
 
 .platform-container .platform-text h1 {
   color: #003334ff;
   margin-bottom: 10px;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .platform-container .platform-img {
@@ -495,7 +511,7 @@ p {
 .courier .courier-title {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
   color: #003334ff;
 }
 
@@ -536,6 +552,7 @@ p {
 .testi-container .testi-title h1 {
   font-size: 1.5rem;
   color: #003334ff;
+  margin-bottom: 1.5rem;
 }
 
 .testi-container .testi-main {
@@ -556,6 +573,8 @@ p {
 
 .testi-container .testi-main .testi-content p {
   font-size: 1rem;
+  padding: 1rem;
+  font-style: italic;
 }
 /* testi style end */
 
@@ -563,13 +582,14 @@ p {
 .contact-container {
   width: 90%;
   margin: 0px auto;
-  padding: 8rem 1% 1.4rem;
+  padding: 2rem 1% 1.4rem;
 }
 
 .contact-container .contact-title h1 {
   color: #003334ff;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .contact-container .contact-content {
@@ -747,10 +767,11 @@ p {
   margin: 0px auto;
 }
 
-.footer .footer-title h3 {
-  font-size: 1rem;
+.footer .footer-title h2 {
+  font-size: 1.5rem;
   color: #003334ff;
   margin-bottom: 1rem;
+  padding-left:0.3rem;
 }
 
 .footer .footer-content {
@@ -792,6 +813,7 @@ p {
   width: 5rem;
   /* align-items: center;
   display: flex; */
+  
 }
 
 .footer .footer-content .footer-content-3 p {
