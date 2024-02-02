@@ -1,5 +1,5 @@
 function sendWa() {
-  let phoneNumber = "+6281264755844";
+  let phoneNumber = "+6282282342114";
 
   let name = document.querySelector(".name").value;
   let address = document.querySelector(".address").value;
