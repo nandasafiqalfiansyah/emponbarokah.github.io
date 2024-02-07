@@ -100,7 +100,7 @@ document.addEventListener("click", function (e) {
 });
 
 function kirimPesanWa() {
-  let nomorHp = "+6281264755844";
+  let nomorHp = "+6282282342114";
 
   let nama = document.querySelector(".nama").value;
   let alamat = document.querySelector(".alamat").value;
